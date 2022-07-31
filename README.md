@@ -1,2 +1,2 @@
-# test
-for testing
+This is the control repo yo!
+
