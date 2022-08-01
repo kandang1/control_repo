@@ -1,4 +1,9 @@
 mod 'puppetlabs-stdlib', '6.6.0'
+
+mod 'baseline',
+  :git => 'git@github.com:kandang1/baseline.git',
+  :branch => 'master'
+
 #mod 'apache',
 #  :git => 'https://teste.com/puppetlabs/puppetlabs-apache',
 #  :ref => 'docs_experiment'
