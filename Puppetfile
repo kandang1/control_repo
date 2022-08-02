@@ -1,5 +1,7 @@
 mod 'puppetlabs-stdlib', '6.6.0'
 
+mod 'puppetlabs-puppetserver_gem', '1.1.1'
+
 mod 'baseline',
   :git => 'git@github.com:kandang1/baseline.git',
   :branch => 'master'
