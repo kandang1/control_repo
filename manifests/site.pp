@@ -1,8 +1,7 @@
 node 'puppet.kandang.com' {
 #  include 'baseline'
-  class { 'r10k':
-    remote => 'git@github.com:kandang1/control_repo.git',
-  }
+$test = hiera('test')
+ notify {"We aren\'t setup to configure and value of test is $test":}
 }
 
 node 'agent1.kandang.com' {
