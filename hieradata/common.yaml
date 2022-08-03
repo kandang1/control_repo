@@ -1,3 +1,5 @@
 ---
-kandang_password: ENC[PKCS7,MIIBeQYJKoZIhvcNAQcDoIIBajCCAWYCAQAxggEhMIIBHQIBADAFMAACAQEwDQYJKoZIhvcNAQEBBQAEggEAAsExbigsOrTpeRIeoxi9dObMeSfPwMMBg+We8V4eH1NjAmpNC1+JB/EWrHgViaXAqAMiKEmTv1ijQm7IDfeWHk198DuCu4sGBNP3bK+Jy1pbSpLUOfXhoCcPrUMO+WovTUZilF+/d6gEMvgqTIGNWxilW5pfZzCBKzT8sTMkxU5bVdpWLFJ0iUb6T72cJvBzDiSX7DrajWf0qvUc+6M80rLhqz6jHtWvO+Z/4JrPe5OpLBAloR8GqyOYQ6bEW1f/jnxgiL0G2tQ/2ZqGkHuGy3/ZQjDGXDmz7bz9f/zUobbFf71qZtf34pFIHFcWvYHpm6TxUC0fLgZ3IdAq4x37DTA8BgkqhkiG9w0BBwEwHQYJYIZIAWUDBAEqBBA++8INZMzY0SW18az9HxbbgBDkLmiZe86GGnuTfx6A5rAj]
-test: "this is in COMMON for PRODUCTION"
+#baseline
+baseline::kandang_password: '$1$51nsWT7c$vB06kBcQKLhWBHPcrsoWl/'
+baseline::user: 'kandang'
+#end baseline
