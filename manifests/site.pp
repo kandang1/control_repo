@@ -1,7 +1,8 @@
 node 'puppet.kandang.com' {
 #  include 'baseline'
 $test = hiera('test')
- notify {"We aren\'t setup to configure and value of test is $test":}
+$secret_var = lookup('secret_var')
+ notify {"We aren\'t setup to configure and value of test is $secret_var)":}
 }
 
 node 'agent1.kandang.com' {

@@ -1,16 +1,19 @@
 ---
 version: 5
-defaults:
-  datadir: hieradata
-  data_hash: yaml_data
 hierarchy:
-  - name: "Per-node data (yaml version)"
-    path: "nodes/%{trusted.certname}.yaml" # Add file extension.
-    # Omitting datadir and data_hash to use defaults.
-
-  - name: "Other YAML hierarchy levels"
-    paths: # Can specify an array of paths instead of one.
-      - "location/%{facts.whereami}/%{facts.group}.yaml"
-      - "groups/%{facts.group}.yaml"
-      - "os/%{facts.os.family}.yaml"
-      - "common.yaml"
+#- name: Yaml backend
+#  data_hash: yaml_data
+#  paths:
+#  - "nodes/%{::trusted.certname}.yaml"
+#  - 'common.yaml'
+#  datadir: "/etc/puppet/code/environments/%{environment}/hieradata"
+- name: Eyaml backend
+  lookup_key: eyaml_lookup_key
+  paths:
+  - "nodes/%{::trusted.certname}.yaml"
+  - 'common.yaml'
+  datadir: "/etc/puppet/code/environments/%{environment}/hieradata"
+  options:
+    pkcs7_private_key: "/etc/puppet/secure/keys/private_key.pkcs7.pem"
+    pkcs7_public_key: "/etc/puppet/secure/keys/public_key.pkcs7.pem"
+    extension: yaml
