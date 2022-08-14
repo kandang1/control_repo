@@ -1,5 +1,19 @@
 ---
-#baseline
-baseline::kandang_password: '$1$51nsWT7c$vB06kBcQKLhWBHPcrsoWl/'
-baseline::user: 'kandang'
-#end baseline
+
+zookeeper_hosts:
+ - "the"
+ - "swift"
+ - "brown"
+ - "fox"
+ - "jumped"
+ - "over"
+ - "the"
+ - "fence"
+
+zookeeper_host: "HostOne"
+
+#test_array:
+# - "one"
+# - "two"
+# - "three"
+# - "four"

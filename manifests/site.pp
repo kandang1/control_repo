@@ -1,9 +1,10 @@
 node 'puppet.kandang.com' {
-  include 'baseline'
+  include baseline
 }
 
 node 'agent1.kandang.com' {
-  include 'baseline'
+  include baseline
+  include profiles
 }
 
 node default {
