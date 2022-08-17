@@ -4,9 +4,19 @@ mod 'puppetlabs-puppetserver_gem', '1.1.1'
 
 mod 'keshav2211-eyaml', '0.1.1'
 
+mod 'puppetlabs-ntp', '8.5.0'
+
 mod 'baseline',
   :git => 'git@github.com:kandang1/baseline.git',
   :branch => 'master'
+
+mod 'profiles',
+  :git => 'git@github.com:kandang1/profiles.git',
+  :branch => 'master'
+
+mod 'hadoop',
+  :git => 'git@github.com:kandang1/hadoop.git',
+  :branch => 'main'
 
 #mod 'apache',
 #  :git => 'https://teste.com/puppetlabs/puppetlabs-apache',
